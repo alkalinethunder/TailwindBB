@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors */
+body {
+    @apply bg-gray-900 text-white;
+}
+
+/* typography */
+a {
+    @apply text-accent-800;
+}
+
+a:hover {
+    @apply underline;
+}
+
+a:active {
+    @apply text-accent-500;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    @apply mb-1;
+}
+
+h6 {
+    @apply text-base;
+}
+
+h5 {
+    @apply text-lg;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+/* phpBB hacks */
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+/* quick utils */
+.panel {
+    @apply my-3;
+    @apply p-3;
+    @apply rounded-md;
+}
+
+.surface {
+    @apply bg-gray-800 text-white panel;
+}
+
+.prominent-surface {
+    @apply bg-accent-900 text-white panel;
+}
+
+/* Dropdowns */
+.dropdown {
+    @apply surface;
+}
+
+.forabg {
+    @apply border-accent-900 border-2 rounded-md mb-1 mt-2;
+}
+
+.topiclist li {
+    @apply p-3 m-0;
+}
+
+.topiclist .header {
+    @apply bg-accent-900;
+}
+
+.topiclist .header a {
+    @apply text-white;
+}
